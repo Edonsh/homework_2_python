@@ -7,7 +7,7 @@ products = [
 
 def validate_products(input_products):
     invalid_products = []
-    for prod in products:
+    for prod in input_products:
         if prod["id"] == None:
             invalid_products.append({
                 "product": prod,
@@ -30,4 +30,5 @@ def validate_products(input_products):
 result = validate_products(products)
 for prod in result:
     print(prod)
+    
     
